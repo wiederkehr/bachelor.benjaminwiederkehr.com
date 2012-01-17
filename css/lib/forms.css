@@ -1,0 +1,47 @@
+/*
+Form Styles
+Description:	Layout and Element specific styling
+							Classes to enhance your forms
+Author:				Benjamin Wiederkehr
+Start:				08-01-18
+Last update:	08-05-08
+
+/* Form Styles
+/////////////////////////////////////////////////////////////////*/
+form						{ }
+
+/* Labels
+/////////////////////////////////////////////////////////////////*/
+label						{ font-weight: bold; }
+
+/* Fieldsets
+/////////////////////////////////////////////////////////////////*/
+fieldset				{ padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend					{ font-weight: bold; font-size:1.2em; }
+
+/* Text Fields
+/////////////////////////////////////////////////////////////////*/
+input						{ width: 300px; margin:0.5em 0.5em 0.5em 0; }
+input						{ border:1px solid #bbb; background:#f6f6f6; padding:5px; }
+input:focus			{ border:1px solid #999; background:#fff; }
+
+/* Radio Button Fields
+/////////////////////////////////////////////////////////////////*/
+input.radio			{ width: auto;}
+.radio input		{ width: auto;}
+
+/* Checkbox Fields
+/////////////////////////////////////////////////////////////////*/
+input.checkbox	{ width: auto;}
+.checkbox input	{ width: auto;}
+
+/* Textarea Fields
+/////////////////////////////////////////////////////////////////*/
+textarea				{ width: 300px; height: 150px; margin:0.5em 0.5em 0.5em 0; }
+textarea				{ border:1px solid #bbb; background:#f6f6f6; padding:5px; }
+textarea:focus	{ border:1px solid #999; background:#fff; }
+
+/* Select Fields
+/////////////////////////////////////////////////////////////////*/
+select					{ border:1px solid #bbb; background:#f6f6f6; width:200px; }
+select:focus		{ border:1px solid #999; background:#fff; }

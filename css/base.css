@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*
+Theme Name:		Artillery Blank
+Theme URI:		http://artillery.ch/
+Description:	Blank Theme for Developpement
+Version:			1.0
+Author:				Benjamin Wiederkehr
+Author URI:		http://artillery.ch/
+Domain:				artillery.ch
+Start:				08-01-18
+Last update:	08-05-08
+Copyright:		Benjamin Wiederkehr for Artillery */
+
+@import 'lib/reset.css';
+@import 'lib/typography.css';
+@import 'lib/layout.css';
+@import 'lib/forms.css';
+@import 'lib/toolbox.css';
