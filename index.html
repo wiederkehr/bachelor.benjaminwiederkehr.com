@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<!-- ——————————————————————————————————————————————————————————————————— TITLE -->
 	<title>CANDEO | Gefahrenkataster der Uni Bern</title>
@@ -19,26 +18,8 @@
 	<!-- ——————————————————————————————————————————————————————————————————— CSS -->
 	<link rel="stylesheet"	href="css/base.css"	type="text/css"	media="screen" />
 	<link rel="stylesheet"	href="css/print.css"	type="text/css"	media="print" />
-	<link rel="stylesheet"	href="css/jquery.lightbox.css"	type="text/css"	media="screen" />
-	<link rel="StyleSheet"	href="http://www.apple.com/library/quicktime/stylesheets/qtp_library.css"	type="text/css" />
-	<!--[if IE 7]>
-		<link rel="stylesheet"	href="css/ie7.css"	type="text/css"	media="screen" />
-	<![endif]-->
-	<!--[if lt IE 7]>
-		<link rel="stylesheet"	href="css/ie6.css"	type="text/css"	media="screen" />
-	<![endif]-->
-	<!-- ——————————————————————————————————————————————————————————————————— JS -->
-	<script src="js/jquery.js"	type="text/javascript"></script>
-	<script src="js/jquery.localscroll.js"	type="text/javascript"></script>
-	<script src="js/jquery.scrollTo.js"	type="text/javascript"></script>
-	<script src="js/jquery.lightbox.js"	type="text/javascript"></script>
-	<script type="text/javascript" charset="utf-8">
-		$(document).ready(function() {
-			$('#navigation').localScroll();
-		});
-	</script>
-	<script src="http://www.apple.com/library/quicktime/scripts/ac_quicktime.js"	language="JavaScript"	type="text/javascript"></script>
-	<script src="http://www.apple.com/library/quicktime/scripts/qtp_library.js"	language="JavaScript"	type="text/javascript"></script>
+	<!-- <link rel="stylesheet"	href="css/jquery.lightbox.css"	type="text/css"	media="screen" /> -->
+	<link rel="stylesheet"	href="js/lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
 	<!-- ——————————————————————————————————————————————————————————————————— GA -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3202544-12"></script>
   <script>
@@ -72,7 +53,7 @@
 				<li><a href="#abstrakt"				id="a"	title="Abstrakt">Abstrakt</a></li>
 				<li><a href="#konzept"				id="k"	title="Konzept">Konzept</a></li>
 				<li><a href="#visualisierung"	id="v"	title="Visualisierung">Visualisierung</a></li>
-				<li><a href="#screencast	"		id="sc"	title="Screenshots">Screenshots</a></li>
+				<li><a href="#screencast	"		id="sc"	title="Screencast">Screencast</a></li>
 				<li><a href="#screenshots"		id="ss"	title="Screenshots">Screenshots</a></li>
 				<li>
 					<ul class="bilder">
@@ -115,34 +96,10 @@
 			</div>
 			<div id="screencast" class="kapitel">
 				<h2 id="sc_h">Screenscast</h2>
-				<script type="text/javascript"><!--
-					QT_WritePoster_XHTML('Click to Play', 'img/Gesamtansicht-poster.jpg',
-						'mov/Gesamtansicht.mov',
-						'600', '387', '',
-						'controller', 'true',
-						'autoplay', 'true',
-						'bgcolor', 'black',
-						'scale', 'aspect');
-				//-->
-				</script>
-				<noscript>
-				<object width="600" height="387" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-					<param name="src" value="img/Gesamtansicht-poster.jpg" />
-					<param name="href" value="mov/Gesamtansicht.mov" />
-					<param name="target" value="myself" />
-					<param name="controller" value="false" />
-					<param name="autoplay" value="false" />
-					<param name="scale" value="aspect" />
-					<embed width="600" height="387" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"
-						src="img/Gesamtansicht-poster.jpg"
-						href="mov/Gesamtansicht.mov"
-						target="myself"
-						controller="false"
-						autoplay="false"
-						scale="aspect">
-					</embed>
-				</object>
-				</noscript>
+				<video width="600" height="387" controls>
+				  <source src="mov/Gesamtansicht.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
 			</div>
 			<div id="screenshots" class="kapitel">
 				<h2 id="s_h">Screenshots</h2>
@@ -160,5 +117,17 @@
 	<div id="footer">
 		<div></div>
 	</div><!-- #footer -->
+	<!-- ——————————————————————————————————————————————————————————————————— JS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="js/lightbox2-master/dist/js/lightbox.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('a[href^="#"]').click(function(e) {
+				e.preventDefault();
+				$(window).stop(true).scrollTo(this.hash, {duration:1000, interrupt:true});
+			});
+		});
+	</script>
 </body>
 </html>

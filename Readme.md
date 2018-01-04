@@ -11,9 +11,8 @@ Nothing to install.
 Deploy changed files to server via FTP.
 
 ## Dependencies
-* [jQuery 1.2.6](https://github.com/jquery/jquery)
-* [jQuery.Lightbox](http://jquery.com/plugins/project/jquerylightbox_bal)
-* [jQuery.LocalScroll](https://github.com/flesler/jquery.localScroll)
+* [jQuery 1.11.2](https://github.com/jquery/jquery)
+* [jQuery.Lightbox2](https://github.com/lokesh/lightbox2/)
 * [jQuery.ScrollTo](https://github.com/flesler/jquery.scrollTo)
 
 ## Author
